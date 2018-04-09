@@ -71,7 +71,7 @@ def main(unused_argv):
 
     dt = datetime.now().strftime('%Y%m%d')
 
-    checkpoint_dir = FLAGS.job_dir + 't/checkpoints'
+    checkpoint_dir = FLAGS.job_dir + '/checkpoints'
     tf.gfile.MakeDirs(checkpoint_dir)
 
     final_weight = str(FLAGS.model_dir) + FLAGS.weight_name
