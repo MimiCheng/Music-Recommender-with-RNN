@@ -9,7 +9,7 @@ import pandas as pd
 
 import os
 
-job_dir = "gs://dmp_recommendation_dev/resources/tms/temp_1week"
+job_dir = FLAG.job_dir
 
 def get_metadata(path, key, val):
     csv_files = tf.gfile.Glob(path)
